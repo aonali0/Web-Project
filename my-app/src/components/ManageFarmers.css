@@ -1,0 +1,92 @@
+.manage-farmers {
+  padding: 30px;
+  background: linear-gradient(135deg, #f9f9f9, #ffffff); /* Subtle gradient for a modern look */
+  border-radius: 12px; /* Softer rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  max-width: 800px; /* Constrain the width for readability */
+  margin: 0 auto; /* Center the container */
+}
+
+.manage-farmers h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #333; /* Dark text for better readability */
+  text-align: center; /* Center the heading */
+  font-weight: bold; /* Emphasize the heading */
+  text-transform: uppercase; /* Make the text more impactful */
+  letter-spacing: 1.5px; /* Slightly spaced letters */
+}
+
+.manage-farmers ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Reset margin for consistency */
+}
+
+.manage-farmers li {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between name/location and button */
+  align-items: center; /* Align items vertically */
+  padding: 15px 20px; /* Comfortable padding */
+  margin-bottom: 15px;
+  background-color: #ffffff; /* White background for items */
+  border: 1px solid #e0e0e0; /* Light border for definition */
+  border-radius: 8px; /* Rounded corners for modern look */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.manage-farmers li:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Darker shadow on hover */
+  transform: translateY(-4px); /* Lift effect on hover */
+}
+
+.manage-farmers li:nth-child(even) {
+  background-color: #f7f7f7; /* Alternating background for visual separation */
+}
+
+.manage-farmers button {
+  background-color: #dc3545; /* Bootstrap danger color for delete button */
+  color: white;
+  padding: 10px 16px; /* Slightly larger padding for better clickability */
+  border: none;
+  border-radius: 8px; /* Rounded corners for consistency */
+  font-size: 14px; /* Standard button font size */
+  font-weight: bold; /* Emphasize button text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Add shadow for button depth */
+}
+
+.manage-farmers button:hover {
+  background-color: #c82333; /* Darker red for hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.manage-farmers button:active {
+  background-color: #a71d2a; /* Even darker red for active state */
+  transform: translateY(0); /* Reset on click */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow on click */
+}
+
+@media (max-width: 600px) {
+  .manage-farmers {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .manage-farmers h2 {
+    font-size: 24px; /* Adjust heading size for smaller screens */
+  }
+
+  .manage-farmers li {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: flex-start; /* Align items to the start */
+    padding: 10px 15px; /* Adjust padding */
+  }
+
+  .manage-farmers button {
+    margin-top: 10px; /* Add spacing for stacked layout */
+    width: 100%; /* Full width button for small screens */
+  }
+}
